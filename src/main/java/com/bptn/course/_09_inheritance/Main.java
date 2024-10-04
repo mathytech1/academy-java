@@ -1,6 +1,6 @@
 package com.bptn.course._09_inheritance;
 
-public class Main{
+public class Main{	
 	public static void main(String[] args) {
 //		Car car = new Car(150, "Kia");
 //		car.displayCarSpeed();
