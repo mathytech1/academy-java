@@ -11,6 +11,8 @@ public class Player {
 
     public Player(String name, String playerNumber) {
         // complete constructor
+    	this.name = name;
+    	this.playerNumber = playerNumber;
     }
 
     // create getter methods

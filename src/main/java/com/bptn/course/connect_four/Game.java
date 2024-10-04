@@ -48,7 +48,8 @@ public class Game {
 
 	    public void playerTurn(Player currentPlayer) {
 	        int col = currentPlayer.makeMove();
-	        while (board.addToken(col, currentPlayer.getPlayerNumber())) {
+	       
+	        if (!board.boardFull()) {
 	           // call board method to add token.
 	           board.addToken(col, currentPlayer.getPlayerNumber());
 	        }

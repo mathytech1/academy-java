@@ -31,7 +31,8 @@ public class Board {
     }
 
     public boolean columnFull(int col) {
-        if (col > board[0].length)// check if the column is full by just checking the 0'th row's value
+    	// if(col > board[0].length)
+        if (board[0][col]=="-")// check if the column is full by just checking the 0'th row's value
         {
             return false;
         }
@@ -74,6 +75,8 @@ public class Board {
         // what other conditions should we include here?
         else if (checkVertical(playerNumber)) {
             return true;
+        } else if(checkRightDiagonal(playerNumber)) {
+        	return true;
         }
         return false;
     }
@@ -130,12 +133,11 @@ public class Board {
     public boolean checkRightDiagonal(String playerNumber) {
        // implment method and return an appropriate return type.
        for (int row = 0; row < board.length - 3; row++){
-    	   
-            for (int col = board[0].length-1; col>3; col--){
+            for (int col = board[0].length-1; col >= 3; col--){
                 if(board[row][col].equals(playerNumber)){
                     if(board[row][col] == board[row + 1][col - 1]
                     && board[row][col] == board[row + 2][col - 2]
-                    && board[row][col] == board[row + 2][col - 3]){
+                    && board[row][col] == board[row + 3][col - 3]){
                         return true;
                     }
                 }
@@ -154,50 +156,39 @@ public class Board {
     // only one entry point.
     
     //Uncomment below to see if you've done the job:
-     public static void main(String[] args) {
-         Board board1 = new Board();
-         board1.boardSetUp();
-         board1.printBoard();
-
-         board1.addToken(0, "x");
-         board1.addToken(0, "x");
-         board1.addToken(0, "x");
-         board1.addToken(1, "y");
-         board1.addToken(1, "z");
-         board1.addToken(1, "w");
-         board1.addToken(0, "x");
-
-         System.out.println("Board for testing checkVertical");
-         System.out.println("Board 1 check vertical with x returns -> " + board1.checkVertical("x"));
-         System.out.println("Board 1 check vertical with y returns -> " + board1.checkVertical("y"));
-
-         board1.printBoard();
-
-         Board board2 = new Board();
-         // Test with at least a 4-by-4 size board.
-         board2.boardSetUp();
-         board2.printBoard();
-
-         board2.addToken(0, "x");
-         board2.addToken(0, "x");
-         board2.addToken(0, "w");
-         board2.addToken(0, "w");
-         board2.addToken(1, "y");
-         board2.addToken(1, "x");
-         board2.addToken(1, "w");
-         board2.addToken(2, "y");
-         board2.addToken(2, "w");
-         board2.addToken(2, "x");
-         board2.addToken(3, "w");
-         board2.addToken(3, "w");
-         board2.addToken(3, "w");
-         board2.addToken(3, "x");
-
-         System.out.println("Board for testing diagonals");
-         System.out.println("Board 2 check right diagonal with x returns -> " + board2.checkRightDiagonal("x"));
-         System.out.println("Board 2 check right diagonal y returns -> " + board2.checkRightDiagonal("y"));
-         System.out.println("Board 2 check left diagonal w returns -> " + board2.checkLeftDiagonal("w"));
-
-         board2.printBoard();
-     }
+	/*
+	 * public static void main(String[] args) { Board board1 = new Board();
+	 * board1.boardSetUp(); board1.printBoard();
+	 * 
+	 * board1.addToken(0, "x"); board1.addToken(0, "x"); board1.addToken(0, "x");
+	 * board1.addToken(1, "y"); board1.addToken(1, "z"); board1.addToken(1, "w");
+	 * board1.addToken(0, "x");
+	 * 
+	 * System.out.println("Board for testing checkVertical");
+	 * System.out.println("Board 1 check vertical with x returns -> " +
+	 * board1.checkVertical("x"));
+	 * System.out.println("Board 1 check vertical with y returns -> " +
+	 * board1.checkVertical("y"));
+	 * 
+	 * board1.printBoard();
+	 * 
+	 * Board board2 = new Board(); // Test with at least a 4-by-4 size board.
+	 * board2.boardSetUp(); board2.printBoard();
+	 * 
+	 * board2.addToken(0, "x"); board2.addToken(0, "x"); board2.addToken(0, "w");
+	 * board2.addToken(0, "w"); board2.addToken(1, "y"); board2.addToken(1, "x");
+	 * board2.addToken(1, "w"); board2.addToken(2, "y"); board2.addToken(2, "w");
+	 * board2.addToken(2, "x"); board2.addToken(3, "w"); board2.addToken(3, "w");
+	 * board2.addToken(3, "w"); board2.addToken(3, "x");
+	 * 
+	 * System.out.println("Board for testing diagonals");
+	 * System.out.println("Board 2 check right diagonal with x returns -> " +
+	 * board2.checkRightDiagonal("x"));
+	 * System.out.println("Board 2 check right diagonal y returns -> " +
+	 * board2.checkRightDiagonal("y"));
+	 * System.out.println("Board 2 check left diagonal w returns -> " +
+	 * board2.checkLeftDiagonal("w"));
+	 * 
+	 * board2.printBoard(); }
+	 */
 }
