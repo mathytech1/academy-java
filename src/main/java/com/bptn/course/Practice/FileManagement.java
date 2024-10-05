@@ -17,7 +17,6 @@ public class FileManagement {
 //		System.out.println("File created");
 		
 //		String OS = System.getProperty("os.name").toLowerCase();
-//		System.out.println(OS);
 //		if(OS.indexOf("win") >= 0) {
 //			System.out.println("This OS is Windows");
 //		}else if(OS.indexOf("mac") >= 0) {
