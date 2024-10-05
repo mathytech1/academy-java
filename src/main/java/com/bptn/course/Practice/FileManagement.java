@@ -54,7 +54,7 @@ public class FileManagement {
 			e1.printStackTrace();
 		}
 		
-		// Reading a text file using a buffered reader
+		// Reading a text file using a Scanner
 		try(Scanner sc = new Scanner(new File("src\\main\\java\\com\\bptn\\course\\Practice\\myFile.txt"))){
 			String line;
 			while(sc.hasNext()) {
