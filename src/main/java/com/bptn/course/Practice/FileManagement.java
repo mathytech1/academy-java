@@ -12,8 +12,13 @@ import java.util.Scanner;
 public class FileManagement {
 
 	public static void main(String[] args){
-//		File file = new File("myFile.txt");
-//		file.createNewFile();
+		File file = new File("src\\\\main\\\\java\\\\com\\\\bptn\\\\course\\\\Practice\\myFile1.txt");
+		try {
+			file.createNewFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		System.out.println("File created");
 		
 //		String OS = System.getProperty("os.name").toLowerCase();
@@ -73,6 +78,12 @@ public class FileManagement {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		
+		if(file.delete()) {
+			System.out.println("File Deleted");
+		}else {
+			System.out.println("There is a problem deleting the file.");
 		}
 		
 	}
