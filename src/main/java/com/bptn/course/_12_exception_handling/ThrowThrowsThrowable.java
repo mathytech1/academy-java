@@ -1,4 +1,4 @@
-package com.bptn.course._012_exception_handling;
+package com.bptn.course._12_exception_handling;
 
 public class ThrowThrowsThrowable {
     public static void main(String[] args) {
