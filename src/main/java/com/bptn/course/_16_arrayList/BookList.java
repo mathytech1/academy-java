@@ -1,6 +1,7 @@
 package com.bptn.course._16_arrayList;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class BookList {
 	public static void main(String[] args) {
@@ -38,5 +39,10 @@ public class BookList {
 		// Print the last element of myBooks
 		System.out.println("The last element is: " + myBooks.get(myBooks.size()-1));
 		
+		ArrayList<String> s = new ArrayList<>();
+		System.out.println("Enter you name: ");
+		Scanner scanner = new Scanner(System.in);
+		s.add(scanner.nextLine());
+		System.out.println(s);
 	}
 }
