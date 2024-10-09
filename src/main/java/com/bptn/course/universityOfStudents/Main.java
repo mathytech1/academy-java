@@ -36,6 +36,7 @@ public class Main {
 		birthdate = calendar.getTime();
 		calendar.set(2024, Calendar.SEPTEMBER, 1);
 		admissionDate = calendar.getTime();
+		
 		Student student2 = new Student(124, "george45", "testUsername1", "George", "Cooper", "george@gmail.com",
 				"345678", "202 salt st", "Male", birthdate, admissionDate, 10001, "Computer Science");
 
