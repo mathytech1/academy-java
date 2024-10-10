@@ -1,4 +1,4 @@
-package com.bptn.course._16_arrayList;
+package com.bptn.course._16_List;
 
 import java.util.ArrayList;
 import java.util.Scanner;

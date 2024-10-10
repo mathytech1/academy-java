@@ -1,4 +1,4 @@
-package com.bptn.course._22_map;
+package com.bptn.course._21_map;
 
 import java.util.LinkedHashMap;
 

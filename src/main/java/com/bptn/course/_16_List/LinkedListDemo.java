@@ -1,4 +1,4 @@
-package com.bptn.course._18_linkedlist;
+package com.bptn.course._16_List;
 
 import java.util.Iterator;
 import java.util.LinkedList;

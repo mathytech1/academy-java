@@ -1,4 +1,4 @@
-package com.bptn.course._20_TreeSet;
+package com.bptn.course._19_TreeSet;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;

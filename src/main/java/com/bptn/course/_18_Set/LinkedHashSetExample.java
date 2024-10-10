@@ -1,4 +1,4 @@
-package com.bptn.course._19_hashset;
+package com.bptn.course._18_Set;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
