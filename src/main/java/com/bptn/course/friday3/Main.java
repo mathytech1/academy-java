@@ -1,17 +1,8 @@
-package com.bptn.course._22_MultiThreading;
+package com.bptn.course.friday3;
 
 public class Main {
-	public class MathUtils {
-		public static int add(int a, int b) {
-			// System.out.println(a + b);
-			return a + b;
-		}
-	}
 
 	public static void main(String[] args) {
-
-		int result = MathUtils.add(5, 3);
-		System.out.println("The sum is: " + result);
 
 //		long start1 = System.nanoTime();
 //		// Create two SumCalculator threads to calculate the sum of two different ranges

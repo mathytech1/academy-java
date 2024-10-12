@@ -1,4 +1,4 @@
-package com.bptn.course._21_map;
+package com.bptn.course._20_map;
 
 import java.util.TreeMap;
 

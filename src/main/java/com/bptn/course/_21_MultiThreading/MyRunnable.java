@@ -1,4 +1,4 @@
-package com.bptn.course._22_MultiThreading;
+package com.bptn.course._21_MultiThreading;
 
 public class MyRunnable implements Runnable {
 

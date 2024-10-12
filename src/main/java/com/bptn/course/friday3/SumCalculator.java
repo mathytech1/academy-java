@@ -1,4 +1,4 @@
-package com.bptn.course._22_MultiThreading;
+package com.bptn.course.friday3;
 
 class SumCalculator extends Thread {
 
