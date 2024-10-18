@@ -8,6 +8,8 @@ public class MergeSort {
 		for (int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");
 		}
+		System.out.println();
+
 		int high = num.length - 1;
 		int[] sortedNum = mergeSort(num, 0, high);
 		System.out.println("Sorted array:");
