@@ -15,8 +15,11 @@ public class TestClass {
 		}
 
 		System.out.println("For each loop");
-		for (String n : names)
+
+		for (String n : names) {
 			System.out.println(n);
+		}
+
 		names.remove(1);
 	}
 
