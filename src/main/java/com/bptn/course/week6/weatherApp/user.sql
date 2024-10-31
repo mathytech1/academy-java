@@ -1,0 +1,14 @@
+CREATE TABLE "user"("userId" INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+	"firstName" VARCHAR NOT NULL,
+	"lastName" VARCHAR NOT NULL,
+	"username" VARCHAR NOT NULL,
+	"phone"  VARCHAR NOT NULL,
+	"emailId" VARCHAR NOT NULL UNIQUE,
+	"password" VARCHAR NOT NULL,
+	"emailVerified" BOOLEAN NOT NULL,
+	"createdOn" TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+  CONSTRAINT "userPkey" PRIMARY KEY ("userId"),
+  CONSTRAINT "userEmailIdKey" UNIQUE ("emailId"),
+  CONSTRAINT "userUsernameKey" UNIQUE ("username")
+);
+

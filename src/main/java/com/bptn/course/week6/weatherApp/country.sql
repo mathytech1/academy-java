@@ -1,0 +1,4 @@
+CREATE TABLE "country"("countryId" INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+	"countryCode" VARCHAR NOT NULL, 
+	CONSTRAINT "CountryPkey" PRIMARY KEY ("countryId")
+  );
